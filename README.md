@@ -11,6 +11,8 @@ The following figure is the bode plot and frequency response of the noise speech
 ![horn.wav](https://github.com/hsieh672/Filter-out-voice-noise-with-Wiener-filter/blob/main/imag/horn.png)  
 The following figure is the bode plot and frequency response of the noisy speech(mix.wav):  
 ![noisy](https://github.com/hsieh672/Filter-out-voice-noise-with-Wiener-filter/blob/main/imag/noisy.png)  
+After mixing in the horn.wav noise, the waveform is obviously more complicated than the original file, because horn.wav is a sound file that has been maintained at a high level of loudness, so after extending horn.wav seconds and adding 1.wav, you can see that the amplitude is around plus or minus 0.25, and the waveform of the original horn.wav is superimposed on 1.wav.  
 The following figure is the bode plot and frequency response of the noisy speech passed through the wienwe filter:  
 ![filter](https://github.com/hsieh672/Filter-out-voice-noise-with-Wiener-filter/blob/main/imag/pass%20filter.png)  
-
+After the noise is removed from the file with horn noise mixed in, the original waveform in the plus or minus 0.25 range is significantly reduced, making the entire sound file sounds cleaner.  
+## 
