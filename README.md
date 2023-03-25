@@ -17,7 +17,11 @@ After mixing in the horn.wav noise, the waveform is obviously more complicated t
 ![filter](https://github.com/hsieh672/Filter-out-voice-noise-with-Wiener-filter/blob/main/imag/pass%20filter.png)  
 After the noise is removed from the file with horn noise mixed in, the original waveform in the plus or minus 0.25 range is significantly reduced, making the entire sound file sounds cleaner.  
 ## Calculate the SSNRI
-The SSNRI value is calculated by comparing the speech which passed the filter with the original noise speech as the speech evaluation index.  
+The SSNRI value is calculated by comparing the speech which passed the filter with the noisy speech as the speech evaluation index.  
+The following figure is the equation of SSNRI:
+![SSNR](https://github.com/hsieh672/Filter-out-voice-noise-with-Wiener-filter/blob/main/imag/SSNR.png)  
+![SSNRI](https://github.com/hsieh672/Filter-out-voice-noise-with-Wiener-filter/blob/main/imag/SSNRI.png)  
+
 ```sh
 function ssnri=SSNRI(fileName,noise,time,IS)
  
